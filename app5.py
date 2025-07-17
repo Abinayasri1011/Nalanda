@@ -106,7 +106,7 @@ body:after {
 .hero-sub {
   background: #FFFDE7;   /* pastel white/gray */
   color: #333;           /* soft black */
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Kalam', cursive;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
@@ -171,11 +171,11 @@ else:
 st.markdown(logo_img_tag, unsafe_allow_html=True)
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 .hero-sub {
   background: #FFFDE7;  /* Lighter black */
   color: #333;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Kalam', cursive;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
