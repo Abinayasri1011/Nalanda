@@ -198,7 +198,7 @@ if st.session_state["page"] == "about":
 <p><em>Tired of wandering through a book fair hoping the perfect title calls out to you telepathically?</em><br>
 Yeah, us too.</p>
 
-<p><strong>Nalanda</strong> helps you cut the noise, skip the guilt‑buys, and discover books that match your <strong>actual reading personality</strong> — not some trending list made by a guy who’s read one novel and three tweets.We built Nalanda so you could quietly answer a few smart questions and walk away with a <em>“how‑did‑you‑know‑I’d‑like‑this?”</em> recommendation.</p>
+<p><strong>Nalanda</strong> helps you cut the noise, skip the guilt‑buys, and discover books that match your <strong>actual reading personality</strong> ,not some trending list made by a guy who’s read one novel and three tweets.We built Nalanda so you could quietly answer a few smart questions and walk away with a <em>“how‑did‑you‑know‑I’d‑like‑this?”</em> recommendation.</p>
 
 <p class="callout">You answer. We match. No complicated algorithms. Just clever ones.</p>
 
@@ -542,5 +542,6 @@ with st.sidebar.expander("🔒 Admin login"):
         st.dataframe(df_hist, hide_index=True)
     elif pw_input:
         st.error("Incorrect password")
+
 
 
