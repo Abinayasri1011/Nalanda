@@ -185,7 +185,6 @@ st.markdown("""
 </style>
 <div class="hero-sub">Smart book recommendations. Zero overthinking.</div>
 """, unsafe_allow_html=True)
-st.markdown('<p class="footer-credit">Powered by Black Board Learning</p>', unsafe_allow_html=True)
 celebrate = lambda: st.balloons()
 
 # ────────────────────────── 3 • ABOUT PAGE ---------------------------
@@ -543,3 +542,4 @@ with st.sidebar.expander("🔒 Admin login"):
         st.dataframe(df_hist, hide_index=True)
     elif pw_input:
         st.error("Incorrect password")
+
