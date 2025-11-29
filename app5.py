@@ -64,7 +64,7 @@ def log_search(row: pd.Series) -> None:
     __conn.commit()
 
 # ───────────────────────── 1 • PAGE STYLE ─────────────────────────
-st.set_page_config(" Nalanda Labs", "📖", layout="wide")
+st.set_page_config(" Nalanda ", "📖", layout="wide")
 st.markdown("""
 <style>
 html,body,.stApp {
@@ -162,11 +162,11 @@ if logo_path.exists():
     <div class="hero-main" style="display: flex; align-items: center; justify-content: center; gap: 16px;">
         <img src="data:image/png;base64,{logo_base64}" 
              style="height:80px; margin-bottom:0;" />
-        <span>NALANDA LABS</span>
+        <span>NALANDA</span>
     </div>
     """
 else:
-    logo_img_tag = '<div class="hero-main">NALANDA LABS</div>'
+    logo_img_tag = '<div class="hero-main">NALANDA</div>'
 
 st.markdown(logo_img_tag, unsafe_allow_html=True)
 st.markdown("""
@@ -189,7 +189,7 @@ celebrate = lambda: st.balloons()
 
 # ────────────────────────── 3 • ABOUT PAGE ---------------------------
 if st.session_state["page"] == "about":
-    st.markdown("<h3>About Nalanda Labs</h3>", unsafe_allow_html=True)
+    st.markdown("<h3>About Nalanda</h3>", unsafe_allow_html=True)
     # Rich marketing copy
     st.markdown(
         """
@@ -198,7 +198,7 @@ if st.session_state["page"] == "about":
 <p><em>Tired of wandering through a book fair hoping the perfect title calls out to you telepathically?</em><br>
 Yeah, us too.</p>
 
-<p><strong>Nalanda Labs</strong> helps you cut the noise, skip the guilt‑buys, and discover books that match your <strong>actual reading personality</strong> — not some trending list made by a guy who’s read one novel and three tweets.We built Nalanda Labs so you could quietly answer a few smart questions and walk away with a <em>“how‑did‑you‑know‑I’d‑like‑this?”</em> recommendation.</p>
+<p><strong>Nalanda</strong> helps you cut the noise, skip the guilt‑buys, and discover books that match your <strong>actual reading personality</strong> — not some trending list made by a guy who’s read one novel and three tweets.We built Nalanda so you could quietly answer a few smart questions and walk away with a <em>“how‑did‑you‑know‑I’d‑like‑this?”</em> recommendation.</p>
 
 <p class="callout">You answer. We match. No complicated algorithms. Just clever ones.</p>
 
@@ -542,4 +542,5 @@ with st.sidebar.expander("🔒 Admin login"):
         st.dataframe(df_hist, hide_index=True)
     elif pw_input:
         st.error("Incorrect password")
+
 
